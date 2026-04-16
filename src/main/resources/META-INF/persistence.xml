@@ -6,10 +6,10 @@
     <persistence-unit name="expensePU" transaction-type="JTA">
         <jta-data-source>jdbc/expenseDS</jta-data-source>
         <properties>
-            <!-- إجبار EclipseLink على إنشاء الجداول (drop-and-create) -->
+            
             <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
             <property name="eclipselink.ddl-generation.output-mode" value="database"/>
-            <!-- تفعيل سجل SQL لترى ما يحدث -->
+          
             <property name="eclipselink.logging.level.sql" value="FINE"/>
             <property name="eclipselink.logging.parameters" value="true"/>
         </properties>
